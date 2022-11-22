@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Marcar asistencia</title>
+</head>
+<body>
+    <h1>Asistencia</h1>
+    <h2>Bienvenido a la pagina para marcar asistencia</h2>
+    <h3>
+        Para poder marcar su asistencia debera seleccionar el salon en el en que se encuentra, 
+        para luego seleccionar la materia y la hora a la que asistiras a continuacion
+    </h3>
+
+    <form action="">
+
+        <label>Nombre alumno:</label><br><br>
+
+        <label>Fecha actual:</label>
+        <label id="Fecha"></label><br><br>
+        
+        <label>Dia actual:</label>
+        <label id="Dia"></label><br><br>
+
+        <label>Hora actual:</label>
+        <label id="HoraActual"></label><br><br>
+
+
+        <div id="Domingo">
+          Hoy no hay clases
+        </div>
+
+        <div id="Lunes">
+
+          <table border="1">
+            <tr>
+              <th scope="row">Materias</th>
+              <th colspan="14">Horas</th>
+            </tr>
+
+            <tr>
+              <th>
+                Ingenieria de software II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+              </th>
+              <td colspan="2">
+                <label>19:00 - 19:40</label>
+                <input type="checkbox" id="PrimeraHoraLu" value="PrimeraHoraLu">
+              </td>
+              <td colspan="2">
+                <label>19:40 - 20:20</label>
+                <input type="checkbox" id="SegundaHoraLu" value="SegundaHoraLu">
+              </td>
+              <td colspan="2">
+                <label>20:20 - 21:00</label>
+                <input type="checkbox" id="TerceraHoraLu" value="TerceraHoraLu">
+              </td>
+            </tr>
+          
+            <tr>
+              <th>
+                Programacion II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+            </th>           
+              <td colspan="2">
+                <label>21:10 - 21:50</label>
+                <input type="checkbox" id="CuartaHoraLu" value="CuartaHoraLu">
+              </td>
+              <td colspan="2">
+                <label>21:50 - 22:30</label>
+                <input type="checkbox" id="QuintaHoraLu" value="QuintaHoraLu">
+              </td>
+              <td colspan="2">
+                <label>22:30 - 23:10</label>
+                <input type="checkbox" id="SextaHoraLu" value="SextaHoraLu">
+              </td>
+              <td colspan="2">
+                <label>23:10 - 23:50</label>
+                <input type="checkbox" id="SeptimaHoraLu" value="SeptimaHoraLu">
+              </td>
+            </tr>
+          
+        </table>
+
+        </div>
+
+        <div id="Martes">
+
+          <table border="1">
+            <tr>
+              <th scope="row">Materias</th>
+              <th colspan="14">Horas</th>
+            </tr>
+
+            <tr>
+              <th>
+                Introduccion a proyecto II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+            </th>
+              </th>
+              <td colspan="2">
+                <label>19:00 - 19:40</label>
+                <input type="checkbox" id="PrimeraHoraMa" value="PrimeraHoraMa">
+              </td>
+              <td colspan="2">
+                <label>19:40 - 20:20</label>
+                <input type="checkbox" id="SegundaHoraMa" value="SegundaHoraMa">
+              </td>
+            </tr>
+          
+            <tr>
+              <th>
+                Auditoria en redes II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+            </th>
+              </th>
+              <td colspan="2">
+                <label>20:20 - 21:00</label>
+                <input type="checkbox" id="TerceraHoraMa" value="TerceraHoraMa">
+              </td>
+              <td colspan="2">
+                <label>21:10 - 21:50</label>
+                <input type="checkbox" id="CuartaHoraMa" value="CuartaHoraMa">
+              </td>
+            </tr>
+          
+            <tr>
+              <th>
+                Diseño web I
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+            </th>
+              </th>
+              <td colspan="2">
+                <label>21:50 - 22:30</label>
+                <input type="checkbox" id="QuintaHoraMa" value="QuintaHoraMa">
+              </td>
+              <td colspan="2">
+                <label>22:30 - 23:10</label>
+                <input type="checkbox" id="SextaHoraMa" value="SextaHoraMa">
+              </td>
+            </tr>
+          
+        </table>
+
+        </div>
+
+        <div id="Miercoles">
+
+          <table border="1">
+            <tr>
+              <th scope="row">Materias</th>
+              <th colspan="14">Horas</th>
+            </tr>
+
+            <tr>
+              <th>
+                Base de datos II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+              </th>
+              <td colspan="2">
+                <label>19:00 - 19:40</label>
+                <input type="checkbox" id="PrimeraHoraMi" value="PrimeraHoraMi">
+              </td>
+              <td colspan="2">
+                <label>19:40 - 20:20</label>
+                <input type="checkbox" id="SegundaHoraMi" value="SegundaHoraMi">
+              </td>
+              <td colspan="2">
+                <label>20:20 - 21:00</label>
+                <input type="checkbox" id="TerceraHoraMi" value="TerceraHoraMi">
+              </td>
+            </tr>
+          
+            <tr>
+              <th>
+                Conectividad II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+            </th>
+              <td colspan="2">
+                <label>21:10 - 21:50</label>
+                <input type="checkbox" id="CuartaHoraMi" value="CuartaHoraMi">
+              </td>
+              <td colspan="2">
+                <label>21:50 - 22:30</label>
+                <input type="checkbox" id="QuintaHoraMi" value="QuintaHoraMi">
+              </td>
+              <td colspan="2">
+                <label>22:30 - 23:10</label>
+                <input type="checkbox" id="SextaHoraMi" value="SextaHoraMi">
+              </td>
+            </tr>
+          
+        </table>
+
+        </div>
+
+        <div id="Jueves">
+
+          <table border="1">
+            <tr>
+              <th scope="row">Materias</th>
+              <th colspan="14">Horas</th>
+            </tr>
+
+            <tr>
+              <th>
+                Ingles II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+              </th>
+              <td colspan="2">
+                <label>19:00 - 19:40</label>
+                <input type="checkbox" id="PrimeraHoraJu" value="PrimeraHoraJu">
+              </td>
+              <td colspan="2">
+                <label>19:40 - 20:20</label>
+                <input type="checkbox" id="SegundaHoraJu" value="SegundaHoraJu">
+              </td>
+              <td colspan="2">
+                <label>20:20 - 21:00</label>
+                <input type="checkbox" id="TerceraHoraJu" value="TerceraHoraJu">
+              </td>
+            </tr>
+          
+            <tr>
+              <th>
+                Redes POSIX II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+            </th>           
+              <td colspan="2">
+                <label>21:10 - 21:50</label>
+                <input type="checkbox" id="CuartaHoraJu" value="CuartaHoraJu">
+              </td>
+              <td colspan="2">
+                <label>21:50 - 22:30</label>
+                <input type="checkbox" id="QuintaHoraJu" value="QuintaHoraJu">
+              </td>
+              <td colspan="2">
+                <label>22:30 - 23:10</label>
+                <input type="checkbox" id="SextaHoraJu" value="SextaHoraJu">
+              </td>
+              <td colspan="2">
+                <label>23:10 - 23:50</label>
+                <input type="checkbox" id="SeptimaHoraJu" value="SeptimaHoraJu">
+              </td>
+            </tr>
+          
+        </table>
+
+        </div>
+
+        <div id="Viernes">
+
+          <table border="1">
+            <tr>
+              <th scope="row">Materias</th>
+              <th colspan="14">Horas</th>
+            </tr>
+
+            <tr>
+              <th>
+                Redes Microsoft II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+            </th>
+              </th>
+              <td colspan="2">
+                <label>19:00 - 19:40</label>
+                <input type="checkbox" id="PrimeraHoraVi" value="PrimeraHoraVi">
+              </td>
+              <td colspan="2">
+                <label>19:40 - 20:20</label>
+                <input type="checkbox" id="SegundaHoraVi" value="SegundaHoraVi">
+              </td>
+              <td colspan="2">
+                <label>20:20 - 21:00</label>
+                <input type="checkbox" id="TerceraHoraVi" value="TerceraHoraVi">
+              </td>
+              <td colspan="2">
+                <label>21:10 - 21:50</label>
+                <input type="checkbox" id="CuartaHoraVi" value="CuartaHoraVi">
+              </td>
+            </tr>
+          
+            <tr>
+              <th>
+                Diseño web II
+                <select>
+                  <option value="Salon 1">Salon 1</option>
+                  <option value="Salon 2">Salon 2</option>
+                  <option value="Salon 3">Salon 3</option>
+                  <option value="Salon 4">Salon 4</option>
+                  <option value="Salon 5">Salon 5</option>
+                  <option value="Salon 6">Salon 6</option>
+                  <option value="...">...</option>
+                </select>
+            </th>
+              <td colspan="2">
+                <label>21:50 - 22:30</label>
+                <input type="checkbox" id="QuintaHoraVi" value="QuintaHoraVi">
+              </td>
+            </tr>
+          
+        </table>
+
+        </div>
+
+        <div id="Sabado">
+          Hoy no hay clases
+        </div>
+      
+    </form>
+
+</body>
+</html>
